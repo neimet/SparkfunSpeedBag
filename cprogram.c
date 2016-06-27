@@ -27,7 +27,7 @@ FILE *fp;
 int main() {
 
     //get data and puts it in data_point[]; must modify
-    fp = fopen("data/m2tz.txt", "r");
+    fp = fopen("data/3tz.txt", "r");
 
     while(getAccelData()){
         float filtered_z = process(data_point[0], data_point[1]);
