@@ -39,7 +39,7 @@ should reproduce the last plot, as well as print out the number of hits. For oth
 
 `python streaming.py MysteryDataSet-1.txt`
 
-I also wrote the corresponding code so that it compiles on an arduino IDE, in bagCounter/bagCounter.ino . If you want to run it, you should modify getAccelData() and also write desired behavior in updateCounter(). The code currently is too big for an arduino uno, as it uses around 3KB of dynamic memory. It does compile for an arduino mega. You can reduce this by reducing the number of hits (`num_hits_to_keep`) we remember (to calculate standard deviation), but this reduces performance. Ideally, we would do some sort of streaming standard deviation without keeping all the values, but I have not implemented that yet.
+I also wrote the corresponding code so that it compiles on an arduino IDE, in `bagCounter.ino` . If you want to run it, you should modify getAccelData() and also write desired behavior in updateCounter(). The code currently is too big for an arduino uno, as it uses around 3KB of dynamic memory. It does compile for an arduino mega. You can reduce this by reducing the number of hits (`num_hits_to_keep`) we remember (to calculate standard deviation), but this reduces performance. Ideally, we would do some sort of streaming standard deviation without keeping all the values, but I have not implemented that yet.
 
 I tested the code using just c code that ran the same functions, reading the relevant data, which I saved separately in the data/ subdirectory. This code is cprogram.c Compiling and running this code should count 77 hits, using the 3tz.txt file.
 
