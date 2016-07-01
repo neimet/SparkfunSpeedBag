@@ -67,7 +67,7 @@ Note that I tuned the parameters on the first three files with known hits, as we
 
 2. Computing power and memory usage: I didn't actually run it on an arduino, but my approach does use a decent amount of computation and memory. As mentioned above, you can reduce memory usage by decreasing `num_hits_to_keep`.
 
-## Improvements
+## Directions for Improvement
 
 1. Better thresholding: I'm not sure how to do this. As a human, I can tell (most of the time) when a hit happened, but it was surprisingly difficult to get my code to do the same. I think the first approach with a better thresholding scheme would work the best, but I couldn't come up with a good thresholding scheme that didn't have a lot of ad hoc rules, which is not a good sign.
 
